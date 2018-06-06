@@ -62,9 +62,6 @@ contract Will {
 
     }
 
-    function removeFunds() public payable restricted {
-      require(msg.sender == deathApprover);
-    }
 
     function executeWill() public {
         require(msg.sender == deathApprover);
