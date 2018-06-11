@@ -62,10 +62,6 @@ contract Will {
 
     }
 
-    function duplicateWill() public {
-      require(msg.sender == testator);
-    }
-
     function executeWill() public {
         require(msg.sender == deathApprover);
 
