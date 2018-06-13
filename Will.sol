@@ -71,10 +71,14 @@ contract Will {
         }
 
     }
+    //transfers the designated amounts to the recipients, and can
+    //only be executed by the designated deathApprover
 
     function cancelWill() public restricted {
         testator.transfer(address(this).balance);
     }
+    //not sure if this function is necessary as this would give the testator
+    //incentive to cancel
 
 
 
