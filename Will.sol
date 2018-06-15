@@ -50,7 +50,6 @@ contract Will {
 
     function addFunds() public payable restricted {
     }
-    //necessary?
 
     function adjustPercentages(uint[] newPercentages) public restricted {
         require(newPercentages.length == recipients.length);
@@ -81,8 +80,7 @@ contract Will {
     function cancelWill() public restricted {
         testator.transfer(address(this).balance);
     }
-    //not sure if this function is necessary as this would give the testator
-    //incentive to cancel
+
 
 
 
