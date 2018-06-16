@@ -61,9 +61,7 @@ contract Will {
 
 
     }
-    //percentages are saved in an array in the same order as the recipients
-    //array. To adjust any single percentage the creator must give the full
-    //array of full percentages
+
 
     function executeWill() public {
         require(msg.sender == deathApprover);
