@@ -9,7 +9,6 @@ contract Will {
     address public deathApprover;
     uint[] public amounts;
     uint public signee;
-    uint public totalAmounts;
 
     modifier restricted() {
         require(msg.sender == testator);
