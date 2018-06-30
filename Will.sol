@@ -74,9 +74,10 @@ contract Will {
 
     }
 
+/* 
     function cancelWill() public restricted {
         testator.transfer(address(this).balance);
-    }
+    } */
 
 
 
