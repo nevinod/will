@@ -72,11 +72,11 @@ contract Will {
         }
 
     }
-
+/* 
     function blowupWill() public {
       require(msg.sender == deathApprover);
     }
 
-
+ */
 
 }
