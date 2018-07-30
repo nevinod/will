@@ -9,7 +9,6 @@ contract Will {
     address public deathApprover;
     uint[] public amounts;
 
-
     modifier restricted() {
         require(msg.sender == testator);
         _;
@@ -49,9 +48,6 @@ contract Will {
         amounts.push(0);
     }
 
-    /* function addFunds() public payable restricted {
-    } */
-
     function adjustPercentages(uint[] newPercentages) public restricted {
         require(newPercentages.length == recipients.length);
 
@@ -62,7 +58,6 @@ contract Will {
 
 
     }
-
 
     function executeWill() public {
         require(msg.sender == deathApprover);
