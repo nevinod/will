@@ -23,7 +23,7 @@ contract Will {
     }
 
     /* function newExecutor(address executor) public restricted {
-      recipients[0] = executor;
+      testator = executor;
     } */
 
     function setExecutor(address executor) public restricted {
