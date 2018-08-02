@@ -22,10 +22,6 @@ contract Will {
         amounts.push(address(this).balance);
     }
 
-    /* function newExecutor(address executor) public restricted {
-      testator = executor;
-    } */
-
     function setExecutor(address executor) public restricted {
         deathApprover = executor;
     }
