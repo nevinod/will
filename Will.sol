@@ -69,14 +69,9 @@ contract Will {
 
     }
 
-    /* function cancelWill() public {
-        require(msg.sender == deathApprover);
 
-        uint j = 0;
-        for( j; j < recipients.length; j++) {
-            recipients[j].transfer(amounts[j]);
-        }
 
-    } */
+
+
 
 }
