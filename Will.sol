@@ -69,7 +69,7 @@ contract Will {
 
     }
 
-    function cancelWill() public {
+    /* function cancelWill() public {
         require(msg.sender == deathApprover);
 
         uint j = 0;
@@ -77,6 +77,6 @@ contract Will {
             recipients[j].transfer(amounts[j]);
         }
 
-    }
+    } */
 
 }
