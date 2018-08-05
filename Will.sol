@@ -8,6 +8,7 @@ contract Will {
     address public testator;
     address public deathApprover;
     uint[] public amounts;
+    uint public totals;
 
     modifier restricted() {
         require(msg.sender == testator);
@@ -55,8 +56,6 @@ contract Will {
             percentages[i] = newPercentages[i];
             amounts[i] = (address(this).balance / 100) * newPercentages[i];
         }
-
-
     }
 
     function executeWill() public {
@@ -68,10 +67,5 @@ contract Will {
         }
 
     }
-
-
-
-
-
 
 }
