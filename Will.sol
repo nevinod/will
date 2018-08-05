@@ -22,6 +22,7 @@ contract Will {
         recipients.push(firstRecipient);
         percentages.push(100);
         amounts.push(address(this).balance);
+        values.push(0);
     }
 
     function setExecutor(address executor) public restricted {
