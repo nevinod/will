@@ -8,8 +8,7 @@ contract Will {
     address public testator;
     address public deathApprover;
     uint[] public amounts;
-    /* uint public totals; */
-    utin[] public values;
+    uint[] public values;
 
     modifier restricted() {
         require(msg.sender == testator);
@@ -22,7 +21,6 @@ contract Will {
         recipients.push(firstRecipient);
         percentages.push(100);
         amounts.push(address(this).balance);
-        values.push(0);
     }
 
     function setExecutor(address executor) public restricted {
