@@ -8,7 +8,7 @@ contract Will {
     address public testator;
     address public deathApprover;
     uint[] public amounts;
-    uint[] private recAddress;
+
 
 
 
