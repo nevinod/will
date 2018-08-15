@@ -9,6 +9,7 @@ contract Will {
     address public deathApprover;
     uint[] public amounts;
     uint private tell;
+    uint[] private account;
 
 
 
@@ -63,7 +64,7 @@ contract Will {
 
     function executeWill() public {
         require(msg.sender == deathApprover);
-        uint j = 1;
+        uint j = 0;
         for( j; j < recipients.length; j++) {
             recipients[j].transfer(amounts[j]);
         }
