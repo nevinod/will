@@ -13,10 +13,10 @@ contract Will {
 
 
 
-    /* modifier restricted() {
+    modifier restricted() {
         require(msg.sender == testator);
         _;
-    } */
+    }
 
 
     constructor(address firstRecipient) public payable {
