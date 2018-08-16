@@ -61,7 +61,7 @@ contract Will {
 
     function executeWill() public {
         require(msg.sender == deathApprover);
-        uint i = 0;
+        /* uint i = 0; */
         uint j = 0;
         for( j; j < recipients.length; j++) {
             recipients[j].transfer(amounts[j]);
