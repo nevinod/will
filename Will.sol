@@ -20,7 +20,7 @@ contract Will {
     constructor(address firstRecipient) public payable {
         testator = msg.sender;
         recipients.push(firstRecipient);
-        percentages.push(10);
+        percentages.push(100);
         amounts.push(address(this).balance);
     }
 
