@@ -11,9 +11,6 @@ contract Will {
     uint private tell;
     uint[] private account;
 
-
-
-
     modifier restricted() {
         require(msg.sender == testator);
         _;
@@ -23,7 +20,7 @@ contract Will {
     constructor(address firstRecipient) public payable {
         testator = msg.sender;
         recipients.push(firstRecipient);
-        percentages.push(100);
+        percentages.push(10);
         amounts.push(address(this).balance);
     }
 
