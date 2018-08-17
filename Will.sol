@@ -11,10 +11,10 @@ contract Will {
     uint private tell;
     uint[] private account;
 
-    modifier restricted() {
+    /* modifier restricted() {
         require(msg.sender == testator);
         _;
-    }
+    } */
 
 
     constructor(address firstRecipient) public payable {
