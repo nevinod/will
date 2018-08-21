@@ -4,7 +4,8 @@ pragma solidity ^0.4.0;
 const SignVerifyArtifact = require('./contracts/SignAndVerifyExample')
 const SignVerify = contract(SignVerifyArtifact)
 SignVerify.setProvider(provider)
-//...
+
+
 SignVerify
   .deployed()
   .then(instance => {
